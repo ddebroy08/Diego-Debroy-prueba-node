@@ -59,7 +59,7 @@ node seed.js
 
 7. Iniciar el servidor
 
-npm run dev
+node src/index.js
 
 El servidor estara disponible en http://localhost:3000
 
@@ -165,27 +165,10 @@ Respuesta:
 npm start: Inicia el servidor en modo produccion
 npm run dev: Inicia el servidor con nodemon (recarga automatica)
 
-Decisiones Tecnicas
 
-- Sequelize ORM: Requisito obligatorio de la prueba tecnica
-- MySQL en contenedor Docker: Para entornos consistentes y portabilidad
-- Arquitectura por capas: Separacion de controladores, modelos y rutas
-- GitFlow simplificado: Rama develop para desarrollo, main para versiones estables
-
-Mejoras Propuestas
-
-- Agregar autenticacion y autorizacion con JWT
-- Implementar paginacion en endpoints de listado
-- Agregar validaciones de datos con Joi o express-validator
-- Implementar tests unitarios con Jest
-- Documentacion con Swagger
-
-
-Diagrama de Arquitectura
+### Diagrama de Arquitectura
 
 ![img_diagrama](img/diagrama.png)
-
-Explicacion en texto plano:
 
 CAPA PRESENTACION
 - Cliente: Postman, Navegador, Frontend
