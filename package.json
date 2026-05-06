@@ -1,0 +1,31 @@
+{
+  "name": "diego-debroy-prueba-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddebroy08/Diego-Debroy-prueba-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ddebroy08/Diego-Debroy-prueba-node/issues"
+  },
+  "homepage": "https://github.com/ddebroy08/Diego-Debroy-prueba-node#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "dotenv": "^17.4.2",
+    "nodemon": "^3.1.14"
+  }
+}

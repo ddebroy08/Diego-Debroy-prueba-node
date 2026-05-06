@@ -1,0 +1,24 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: market_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: Market
+      MYSQL_USER: market_user
+      MYSQL_PASSWORD: market_pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./scripts:/docker-entrypoint-initdb.d
+    networks:
+      - market_network
+
+volumes:
+  mysql_data:
+
+networks:
+  market_network:
+    driver: bridge
